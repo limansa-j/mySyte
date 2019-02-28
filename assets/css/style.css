@@ -1,0 +1,231 @@
+@import 'grid.css';
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 26px;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
+
+p{
+	font-family: Ubuntu;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 26px;
+	font-size: 15px;
+	letter-spacing: 0.5px;
+	margin-bottom: 20px;
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.header {
+	width: 100%;
+	margin: 31px 0;
+
+}
+
+.container a{
+	text-decoration: none;
+}
+.logo {
+/*position: absolute;*/
+width: 168px;
+height: 24px;
+
+font-family: Montserrat;
+/* font-style: normal;
+font-weight: bold;  */
+/* line-height: 24px; */
+font-size: 20px;
+
+color: black;
+}
+
+a .logo{
+	text-decoration: none;
+}
+.site_menu {
+	/*justify-content: flex-end;*/
+	margin-left: auto;
+}
+
+.main-menu {
+    color: #000000;
+    font-family: "Open Sans";
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.main-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.main-menu li {
+    display: inline-block;
+}
+
+.main-menu a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+
+    padding: 8px 18px;
+
+    transition: color .3s ease;
+}
+
+.main-menu a:hover {
+    color: red;
+}
+
+.container_header h1{
+	text-align: center;
+	font-size: 44px;
+	color: #141720;
+}
+
+.container_paragraph p{
+	text-align: center;
+	font-size: 25px;
+	color: #5D5F65;
+}
+
+.about_us_info {
+	padding: 10%;
+	background: #141720;
+	color: white;
+}
+
+.about_us_info h1{
+	margin-bottom: 58px;
+}
+
+
+.about_us_picture{}
+
+/*стили для timeline*/
+
+.timeline_text{
+	padding: 10%;
+	color: #2B2B2B;
+}
+
+.timeline_text h1{
+	margin-bottom: 58px;	
+}
+
+.our_services {
+	background: #EFEFEF;
+}
+
+.our_services .article_icon {
+	padding-left: 20px; ;
+}
+
+.our_services .our_services-header {
+	text-align: center;
+	color: #2B2B2B;
+}
+
+.our_services p{
+	color: #5D5F65;
+}
+
+.our_services .article h1{ 
+	font-size: 20px;
+	color: #141720;
+	padding-left: 20px;
+}
+
+.our_services .article p{
+	padding: 0 20px;
+}
+
+.hiring_text {
+	padding: 10%;
+	background: #141720;
+	color: white;
+}
+
+.hiring_text h1 {
+	margin-bottom: 58px;
+}
+
+.hiring_picture img{
+}
+
+.contact_us {
+	padding: 10%;
+	background: #141720;
+	color: white;
+}
+
+.contact_us h1 {
+	margin-bottom: 58px;
+}
+
+form {
+	font-family: 'Open Sans', sans-serif;
+	color: white;
+	overflow:hidden;
+	margin-bottom:20px;
+}
+
+input[type="text"] {
+	width: 100%;
+	padding: 8px;
+
+}
+
+input, textarea {
+	outline: none;
+	border: none;
+	background-color:  #141720;
+	border-bottom:  solid 1px white;
+	display: block;
+	font-family: 'Ubuntu', sans-serif;
+    font-size: 15px;
+    color: white;
+
+}
+
+.contact_us input {
+	margin-bottom: 10px; 
+}
+
+.contact_us textarea {
+	width: 100%;
+	margin-bottom: 98px;
+
+}
+
+input[type=submit] {
+    cursor:pointer;
+}
+
+.btn {
+	border: none;
+	margin-left: auto;
+	display: block;
+	font-size: 15px;
+	background: #C71222;
+	border-radius: 100px;
+	padding: 3% 6%;
+	
+}

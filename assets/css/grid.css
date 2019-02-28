@@ -1,0 +1,107 @@
+html {
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+.header {
+	width: 100%;
+	max-width: 100%;
+	margin: 31px 0;
+}
+
+
+/*стили для */
+.container {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* 
+.header .container {
+
+	margin: 31px 153px;
+} */
+
+/*Стили для slaydr*/
+.slaydr {
+	width: 100%;
+	max-width: 100%;
+}
+
+.container_header {
+/* 	display: flex;
+justify-content: center; */
+	width: 100%;
+	max-width: 100%;
+	font-weight: bold;
+	height: 54px;
+	margin-top: 258px;
+	margin-bottom: 16px;
+}
+
+.container_paragraph{
+	width: 100%;
+	max-width: 100%;
+	height: 44px;
+	margin-bottom: 281px;
+}
+
+/*стили для about_us*/
+
+[class*='col'] {
+    /* box-shadow: 0 0 0 .5px red; */
+ 	width: 100%;
+	max-width: 100%; 
+	margin: 0 0 0 0;
+} 
+
+.col-1 {
+    max-width: calc(100% / 12 * 6 );
+}
+
+.col-3 {
+    max-width: calc(100% / 12 * 6 );
+}
+
+.our_services {
+	width: 100%;
+	max-width: 100%;
+}
+
+.container_article{
+	width: 100%;
+    max-width: 1125px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.col-2 {
+	max-width: calc(100% / 12 * 4 - 20px);
+	margin: 70px 10px;
+	width: 345px;
+}
+
+.hiring .container {
+	padding: 0;
+}
+
+.footer {
+	width: 100%;
+	max-width: 100%;
+	height: 700px;
+}
+
+.footer .btn{
+	display: flex;
+
+}
