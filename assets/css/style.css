@@ -114,7 +114,8 @@ a .logo{
 
 
 .about_us_picture img{
-	object-fit: contain;	
+	object-fit: contain;
+	box-shadow: 0 0 0 .5px green;	
 }
 
 /*стили для timeline*/
@@ -210,6 +211,10 @@ a .logo{
 	color: black;
 }
 
+.contant_contact_us textarea {
+	resize: none;
+}
+
 .contant_contact_us .massage button {
 	padding: 1% 2%;
 }
@@ -271,6 +276,7 @@ input, textarea {
 	width: 100%;
 	height: 150px;
 	padding-bottom: 50px;
+	resize: none;
 
 }
 
@@ -327,6 +333,7 @@ and (max-device-width : 768px) {
 	}
 
 	.massage textarea {
+		resize: none;
 		height: 90px;
 	}
 

@@ -61,15 +61,19 @@ body{
     /* box-shadow: 0 0 0 .5px red; */
  	width: 100%;
 	max-width: 100%; 
-	margin: 0 0 0 0;
+	margin: 0;
+	padding: 0;
 } 
 
 .col-1 {
-    max-width: calc(100% / 12 * 6 );
+	width: 50%;
+    max-width: 50%;
 }
 
 .col-3 {
-    max-width: calc(100% / 12 * 6 );
+    width: 50%;
+    max-width: 50%;
+    box-shadow: 0 0 0 .5px red;
 }
 
 /*стили для timeline*/
@@ -77,16 +81,6 @@ body{
 	display: flex;
 	align-items: baseline;
 }
-
-.even .year, .even .title {
-	padding: 4px 8px;
-}
-
-.event .year {
-	text-align: right;
-}
-
-
 
 /*стили для our_services*/
 .our_services {
