@@ -5,11 +5,11 @@
 	padding: 0;
 }
 
-h1 {
+
+span {
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: normal;
-	line-height: 26px;
 	font-size: 28px;
 	letter-spacing: 1px;
 }
@@ -27,39 +27,32 @@ p{
 img {
 	width: 100%;
 	max-width: 100%;
-	height: 100%;
+/* 	height: 100%; */
 	margin: 0;
 	padding: 0;
-}
-
-.header {
-	width: 100%;
-	margin: 31px 0;
 
 }
 
-.container a{
+a{
 	text-decoration: none;
 }
+
+
 .logo {
 /*position: absolute;*/
-width: 168px;
-height: 24px;
+	width: 168px;
+	height: 24px;
 
-font-family: Montserrat;
-/* font-style: normal;
-font-weight: bold;  */
-/* line-height: 24px; */
-font-size: 20px;
-
-color: black;
+	font-family: Montserrat;
+	font-size: 20px;
+	color: black;
 }
 
 a .logo{
 	text-decoration: none;
 }
+
 .site_menu {
-	/*justify-content: flex-end;*/
 	margin-left: auto;
 }
 
@@ -84,9 +77,7 @@ a .logo{
     display: block;
     color: inherit;
     text-decoration: none;
-
     padding: 8px 18px;
-
     transition: color .3s ease;
 }
 
@@ -94,14 +85,17 @@ a .logo{
     color: red;
 }
 
-.container_header h1{
-	text-align: center;
+.container_header span{
+	display: block;
 	font-size: 44px;
 	color: #141720;
+	text-align: center;
 }
 
-.container_paragraph p{
+.container_paragraph span {
+	display: block;
 	text-align: center;
+	font-family: Ubuntu;
 	font-size: 25px;
 	color: #5D5F65;
 }
@@ -112,26 +106,60 @@ a .logo{
 	color: white;
 }
 
-.about_us_info h1{
+.about_us_info span{
+	display: block;
+	font-family: Ubuntu;
 	margin-bottom: 58px;
 }
 
 
-.about_us_picture{}
+.about_us_picture img{
+	object-fit: contain;	
+}
 
 /*стили для timeline*/
+
+.event .year, .event .title {
+	padding: 4px 8px;
+}
+
+.event .year {
+	text-align: right;
+}
+
+.event .circle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 4px solid #C71222;
+	background-image: linear-gradient(to right, gray 0, gray 2px, transparent 0);
+}
 
 .timeline_text{
 	padding: 10%;
 	color: #2B2B2B;
 }
 
-.timeline_text h1{
+.timeline_text span{
+	display: block;
+	font-family: Ubuntu;
 	margin-bottom: 58px;	
 }
 
 .our_services {
 	background: #EFEFEF;
+}
+
+.our_services span {
+	display: block;
+	margin: 166px 0 82px 0;
+} 
+
+.our_services .text span {
+	display: block;
+	font-family: Ubuntu;
+	font-size: 15px;
+	
 }
 
 .our_services .article_icon {
@@ -147,15 +175,15 @@ a .logo{
 	color: #5D5F65;
 }
 
-.our_services .article h1{ 
+.our_services .article span{ 
+	display: block;
 	font-size: 20px;
 	color: #141720;
 	padding-left: 20px;
+	margin: 0;
+	margin-bottom: 10px;
 }
 
-.our_services .article p{
-	padding: 0 20px;
-}
 
 .hiring_text {
 	padding: 10%;
@@ -163,11 +191,27 @@ a .logo{
 	color: white;
 }
 
-.hiring_text h1 {
+.hiring_text span {
+	display: block;
 	margin-bottom: 58px;
 }
 
 .hiring_picture img{
+	object-fit: contain;
+}
+
+.contant_contact_us {
+	text-align: center;
+}
+
+.contant_contact_us input, .contant_contact_us textarea {
+	background-color: white;
+	border-bottom:  solid 1px #C71222;
+	color: black;
+}
+
+.contant_contact_us .massage button {
+	padding: 1% 2%;
 }
 
 .contact_us {
@@ -176,7 +220,7 @@ a .logo{
 	color: white;
 }
 
-.contact_us h1 {
+.contact_us span {
 	margin-bottom: 58px;
 }
 
@@ -205,27 +249,94 @@ input, textarea {
 
 }
 
+
+.contact_us span{
+	display: block;
+	margin-bottom: 58px;
+}
+
 .contact_us input {
 	margin-bottom: 10px; 
 }
 
-.contact_us textarea {
+~webkit-input-placeholder {
+	color: white;
+}
+
+.massage {
+	position: relative;
+}
+
+.massage textarea {
 	width: 100%;
-	margin-bottom: 98px;
+	height: 150px;
+	padding-bottom: 50px;
 
 }
 
-input[type=submit] {
-    cursor:pointer;
+input[type=text], .massage textarea {
+	padding: 10px;
 }
 
-.btn {
+.massage button {
+	position: absolute;
+	bottom: 25px;
+	right: 25px;
+	float: right;
 	border: none;
 	margin-left: auto;
-	display: block;
+	color: white;
 	font-size: 15px;
 	background: #C71222;
 	border-radius: 100px;
 	padding: 3% 6%;
+	cursor:pointer;
 	
+}
+
+/*CSS Mobile*/
+@media only screen
+and (min-device-width : 500px)
+and (max-device-width : 768px) {
+	.container_header span{
+		font-size: 30px;
+	}
+
+	.container_paragraph span{
+		font-size: 20px;
+	}
+
+	.about_us_info {
+		padding: 5%;
+	}
+
+	.about_us_info span {
+		margin-bottom: 30px;
+	}
+
+	.hiring_text {
+		padding: 5%;
+	}
+
+	.hiring_text span {
+		margin-bottom: 30px;
+	}
+
+	.contact_us span {
+		margin-bottom: 30px;
+	}
+
+	.massage textarea {
+		height: 90px;
+	}
+
+	input[type=text], .massage textarea {
+		padding: 1px;
+	}
+
+	.massage button {
+		bottom: 15px;
+		right: 15px;
+		font-size: 10px;
+	}
 }
