@@ -16,8 +16,8 @@ body{
 
 .header {
 	width: 100%;
-	max-width: 100%;
-
+	max-width: 100%; 
+	margin: 102px 0 0 153px;
 }
 
 .container {
@@ -32,13 +32,12 @@ body{
     flex-wrap: wrap;
 }
 
-/*Стили для slaydr*/
-.slaydr {
+.slider {
 	width: 100%;
 	max-width: 100%;
 }
 
-.container_header {
+.container__header {
 	width: 100%;
 	max-width: 100%;
 	height: 54px;
@@ -48,14 +47,12 @@ body{
 
 }
 
-.container_paragraph{
+.container__paragraph{
 	width: 100%;
 	max-width: 100%;
 	height: 44px;
 	margin-bottom: 281px;
 }
-
-/*стили для about_us*/
 
 [class*='col'] {
     /* box-shadow: 0 0 0 .5px red; */
@@ -71,24 +68,22 @@ body{
 }
 
 .col-3 {
-    width: 50%;
-    max-width: 50%;
-    box-shadow: 0 0 0 .5px red;
+    width: 100%;
+    max-width: 500px;
+    justify-content: center;
 }
 
-/*стили для timeline*/
 .event {
 	display: flex;
 	align-items: baseline;
 }
 
-/*стили для our_services*/
-.our_services {
+.our-services {
 	width: 100%;
 	max-width: 100%;
 }
 
-.container_article{
+.container__article{
 	width: 100%;
     max-width: 1125px;
     margin: 0 auto;
@@ -101,14 +96,10 @@ body{
 	width: 345px;
 }
 
-.article_icon {
-	/* position: absolute; */
+.article__icon {
 	width: 100%;
 	max-width: 40px;
 	margin: 0;
-	/* height: 39.98px;
-	left: 153.01px;
-	top: 2348.01px; */
 }
 
 .hiring .container {
@@ -132,9 +123,10 @@ body{
 	max-width: 100%;
 }
 
-.contant_contact_us {
-	width:100%;
-	max-width: 100%;
+.contact-us__forma {
+	width: 100%;
+	max-width: 500px;
+	display: block;
 }
 
 .footer {

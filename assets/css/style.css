@@ -5,6 +5,13 @@
 	padding: 0;
 }
 
+h1 {
+	font-family: Montserrat;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 28px;
+	letter-spacing: 1px;
+}
 
 span {
 	font-family: Montserrat;
@@ -27,7 +34,6 @@ p{
 img {
 	width: 100%;
 	max-width: 100%;
-/* 	height: 100%; */
 	margin: 0;
 	padding: 0;
 
@@ -39,7 +45,6 @@ a{
 
 
 .logo {
-/*position: absolute;*/
 	width: 168px;
 	height: 24px;
 
@@ -52,7 +57,7 @@ a .logo{
 	text-decoration: none;
 }
 
-.site_menu {
+.syte-menu {
 	margin-left: auto;
 }
 
@@ -67,6 +72,7 @@ a .logo{
     list-style: none;
     padding: 0;
     margin: 0;
+    margin-right: 270px;
 }
 
 .main-menu li {
@@ -85,14 +91,14 @@ a .logo{
     color: red;
 }
 
-.container_header span{
+.container__header span{
 	display: block;
 	font-size: 44px;
 	color: #141720;
 	text-align: center;
 }
 
-.container_paragraph span {
+.container__paragraph span {
 	display: block;
 	text-align: center;
 	font-family: Ubuntu;
@@ -100,25 +106,23 @@ a .logo{
 	color: #5D5F65;
 }
 
-.about_us_info {
+.about-us__info {
 	padding: 10%;
 	background: #141720;
 	color: white;
 }
 
-.about_us_info span{
+.about-us__info span{
 	display: block;
 	font-family: Ubuntu;
 	margin-bottom: 58px;
 }
 
 
-.about_us_picture img{
+.about-us__picture img{
 	object-fit: contain;
 	box-shadow: 0 0 0 .5px green;	
 }
-
-/*стили для timeline*/
 
 .event .year, .event .title {
 	padding: 4px 8px;
@@ -136,47 +140,47 @@ a .logo{
 	background-image: linear-gradient(to right, gray 0, gray 2px, transparent 0);
 }
 
-.timeline_text{
+.timeline__text{
 	padding: 10%;
 	color: #2B2B2B;
 }
 
-.timeline_text span{
+.timeline__text span{
 	display: block;
 	font-family: Ubuntu;
 	margin-bottom: 58px;	
 }
 
-.our_services {
+.our-services {
 	background: #EFEFEF;
 }
 
-.our_services span {
+.our-services span {
 	display: block;
 	margin: 166px 0 82px 0;
 } 
 
-.our_services .text span {
+.our-services .text span {
 	display: block;
 	font-family: Ubuntu;
 	font-size: 15px;
 	
 }
 
-.our_services .article_icon {
+.our-services .article__icon {
 	padding-left: 20px; ;
 }
 
-.our_services .our_services-header {
+.our-services .our-services__header {
 	text-align: center;
 	color: #2B2B2B;
 }
 
-.our_services p{
+.our-services p{
 	color: #5D5F65;
 }
 
-.our_services .article span{ 
+.our-services .article span{ 
 	display: block;
 	font-size: 20px;
 	color: #141720;
@@ -185,47 +189,53 @@ a .logo{
 	margin-bottom: 10px;
 }
 
-
-.hiring_text {
+.hiring__text {
 	padding: 10%;
 	background: #141720;
 	color: white;
 }
 
-.hiring_text span {
+.hiring__text span {
 	display: block;
 	margin-bottom: 58px;
 }
 
-.hiring_picture img{
+.hiring__picture img{
 	object-fit: contain;
 }
 
-.contant_contact_us {
+.main h1 {
 	text-align: center;
 }
 
-.contant_contact_us input, .contant_contact_us textarea {
-	background-color: white;
-	border-bottom:  solid 1px #C71222;
-	color: black;
-}
-
-.contant_contact_us textarea {
-	resize: none;
-}
-
-.contant_contact_us .massage button {
-	padding: 1% 2%;
-}
-
-.contact_us {
+.contact-us__forma {
+	text-align: center;
+	justify-content: center;
 	padding: 10%;
 	background: #141720;
 	color: white;
 }
 
-.contact_us span {
+.contact-us__forma input, .contact-us__forma textarea {
+	border-bottom:  solid 1px white;
+
+}
+
+.contact-us__forma textarea {
+	resize: none;
+}
+
+.contact-us__forma .massage button {
+	padding: 1% 2%;
+}
+
+.contact-us {
+	padding: 10%;
+	background: #141720;
+	color: white;
+}
+
+.contact-us span {
 	margin-bottom: 58px;
 }
 
@@ -254,18 +264,13 @@ input, textarea {
 
 }
 
-
-.contact_us span{
+.contact-us span{
 	display: block;
 	margin-bottom: 58px;
 }
 
-.contact_us input {
+.contact-us input {
 	margin-bottom: 10px; 
-}
-
-~webkit-input-placeholder {
-	color: white;
 }
 
 .massage {
@@ -304,31 +309,31 @@ input[type=text], .massage textarea {
 @media only screen
 and (min-device-width : 500px)
 and (max-device-width : 768px) {
-	.container_header span{
+	.container__header span{
 		font-size: 30px;
 	}
 
-	.container_paragraph span{
+	.container__paragraph span{
 		font-size: 20px;
 	}
 
-	.about_us_info {
+	.about-us__info {
 		padding: 5%;
 	}
 
-	.about_us_info span {
+	.about-us__info span {
 		margin-bottom: 30px;
 	}
 
-	.hiring_text {
+	.hiring__text {
 		padding: 5%;
 	}
 
-	.hiring_text span {
+	.hiring__text span {
 		margin-bottom: 30px;
 	}
 
-	.contact_us span {
+	.contact-us span {
 		margin-bottom: 30px;
 	}
 
